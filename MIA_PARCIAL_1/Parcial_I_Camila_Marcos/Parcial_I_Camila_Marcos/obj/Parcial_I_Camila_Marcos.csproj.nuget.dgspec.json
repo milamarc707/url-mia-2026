@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\camil\\Desktop\\url-mia-2026\\semana-1\\semana-2\\Laboratorio_2_CSV_JSON\\Laboratorio_2_CSV_JSON.csproj": {}
+    "C:\\Users\\camil\\Parcial_I_Camila_Marcos\\Parcial_I_Camila_Marcos\\Parcial_I_Camila_Marcos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\camil\\Desktop\\url-mia-2026\\semana-1\\semana-2\\Laboratorio_2_CSV_JSON\\Laboratorio_2_CSV_JSON.csproj": {
+    "C:\\Users\\camil\\Parcial_I_Camila_Marcos\\Parcial_I_Camila_Marcos\\Parcial_I_Camila_Marcos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\camil\\Desktop\\url-mia-2026\\semana-1\\semana-2\\Laboratorio_2_CSV_JSON\\Laboratorio_2_CSV_JSON.csproj",
-        "projectName": "Laboratorio_2_CSV_JSON",
-        "projectPath": "C:\\Users\\camil\\Desktop\\url-mia-2026\\semana-1\\semana-2\\Laboratorio_2_CSV_JSON\\Laboratorio_2_CSV_JSON.csproj",
+        "projectUniqueName": "C:\\Users\\camil\\Parcial_I_Camila_Marcos\\Parcial_I_Camila_Marcos\\Parcial_I_Camila_Marcos.csproj",
+        "projectName": "Parcial_I_Camila_Marcos",
+        "projectPath": "C:\\Users\\camil\\Parcial_I_Camila_Marcos\\Parcial_I_Camila_Marcos\\Parcial_I_Camila_Marcos.csproj",
         "packagesPath": "C:\\Users\\camil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\camil\\Desktop\\url-mia-2026\\semana-1\\semana-2\\Laboratorio_2_CSV_JSON\\obj\\",
+        "outputPath": "C:\\Users\\camil\\Parcial_I_Camila_Marcos\\Parcial_I_Camila_Marcos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\camil\\AppData\\Roaming\\NuGet\\NuGet.Config"
