@@ -1,0 +1,4 @@
+XML usa etiquetas de apertura y cierre (<tag>valor</tag>),
+es más extenso. JSON usa pares clave-valor, es mas compacto. 
+XML soporta atributos y validación con esquemas (XSD); 
+JSON es más simple pero no tiene esa validación nativa.
