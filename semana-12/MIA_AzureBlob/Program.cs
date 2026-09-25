@@ -5,8 +5,7 @@ using Azure;
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
 
-string connectionString =
-   "key_azure(no podemos subir la clave a github)";
+string connectionString = "key_azure(no podemos subir la clave a github)";
 string containerName = "archivos";
 
 BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
