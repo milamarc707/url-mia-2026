@@ -6,7 +6,7 @@ using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
 
 string connectionString =
-   "DefaultEndpointsProtocol=https;AccountName=crmmstoragesemana12;AccountKey=s0vpgr9z7f/jxqHERhMPdaRyvQ0Pq/Czetc6J+Nu/eR1Yu7koCQF5XWFTxO4UpHn6tTmfof3vfg3+ASthX6omg==;EndpointSuffix=core.windows.net";
+   "key_azure(no podemos subir la clave a github)";
 string containerName = "archivos";
 
 BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
