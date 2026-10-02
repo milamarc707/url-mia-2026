@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3lTpjnHsNzs=",
+  "dgSpecHash": "povjyjD5o4Q=",
   "success": true,
-  "projectFilePath": "C:\\Users\\camil\\MIA_AzureBlob\\MIA_AzureBlob.csproj",
+  "projectFilePath": "C:\\Users\\camil\\Desktop\\url-mia-2026\\semana-1\\semana-12\\MIA_AzureBlob\\MIA_AzureBlob.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\camil\\.nuget\\packages\\azure.core\\1.55.0\\azure.core.1.55.0.nupkg.sha512",
     "C:\\Users\\camil\\.nuget\\packages\\azure.storage.blobs\\12.29.2\\azure.storage.blobs.12.29.2.nupkg.sha512",

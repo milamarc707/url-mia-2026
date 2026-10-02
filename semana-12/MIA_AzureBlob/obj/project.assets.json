@@ -940,11 +940,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\camil\\MIA_AzureBlob\\MIA_AzureBlob.csproj",
+      "projectUniqueName": "C:\\Users\\camil\\Desktop\\url-mia-2026\\semana-1\\semana-12\\MIA_AzureBlob\\MIA_AzureBlob.csproj",
       "projectName": "MIA_AzureBlob",
-      "projectPath": "C:\\Users\\camil\\MIA_AzureBlob\\MIA_AzureBlob.csproj",
+      "projectPath": "C:\\Users\\camil\\Desktop\\url-mia-2026\\semana-1\\semana-12\\MIA_AzureBlob\\MIA_AzureBlob.csproj",
       "packagesPath": "C:\\Users\\camil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\camil\\MIA_AzureBlob\\obj\\",
+      "outputPath": "C:\\Users\\camil\\Desktop\\url-mia-2026\\semana-1\\semana-12\\MIA_AzureBlob\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\camil\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,11 +1,14 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Threading.Tasks;
 using Azure;
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
 
-string connectionString = "key_azure(no podemos subir la clave a github)";
+CargarVariablesEnv();
+
+string connectionString = Environment.GetEnvironmentVariable("AZURE_STORAGE_CONNECTION_STRING")
+    ?? throw new InvalidOperationException("La variable de entorno 'AZURE_STORAGE_CONNECTION_STRING' no está configurada.");
 string containerName = "archivos";
 
 BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
@@ -178,6 +181,68 @@ async Task EliminarArchivoAsync(BlobContainerClient container)
     catch (RequestFailedException ex)
     {
         Console.WriteLine($"Error al eliminar el archivo: {ex.Message}\n");
+    }
+}
+
+void CargarVariablesEnv()
+{
+    string[] nombres = [".env", "llamado.env"];
+
+    // 1. Buscar en AppContext.BaseDirectory y hacia arriba
+    if (BuscarEnArbol(AppContext.BaseDirectory, nombres)) return;
+
+    // 2. Buscar en Directory.GetCurrentDirectory() y hacia arriba
+    if (BuscarEnArbol(Directory.GetCurrentDirectory(), nombres)) return;
+
+    // 3. Buscar en la subcarpeta del proyecto si se ejecuta desde la raíz del repo
+    string subcarpeta = Path.Combine(Directory.GetCurrentDirectory(), "semana-12", "MIA_AzureBlob");
+    if (Directory.Exists(subcarpeta))
+    {
+        if (BuscarEnArbol(subcarpeta, nombres)) return;
+    }
+}
+
+bool BuscarEnArbol(string directorioInicial, string[] nombres)
+{
+    try
+    {
+        DirectoryInfo? dir = new DirectoryInfo(directorioInicial);
+        while (dir != null && dir.Exists)
+        {
+            foreach (var nombre in nombres)
+            {
+                string ruta = Path.Combine(dir.FullName, nombre);
+                if (File.Exists(ruta))
+                {
+                    ProcesarArchivoEnv(ruta);
+                    return true;
+                }
+            }
+            dir = dir.Parent;
+        }
+    }
+    catch
+    {
+        // Ignorar excepciones de permisos al navegar por el árbol
+    }
+    return false;
+}
+
+void ProcesarArchivoEnv(string ruta)
+{
+    foreach (var linea in File.ReadAllLines(ruta))
+    {
+        string lineaLimpia = linea.Trim();
+        if (string.IsNullOrWhiteSpace(lineaLimpia) || lineaLimpia.StartsWith("#"))
+            continue;
+
+        var partes = lineaLimpia.Split('=', 2);
+        if (partes.Length == 2)
+        {
+            var clave = partes[0].Trim();
+            var valor = partes[1].Trim().Trim('"').Trim('\'');
+            Environment.SetEnvironmentVariable(clave, valor);
+        }
     }
 }
 

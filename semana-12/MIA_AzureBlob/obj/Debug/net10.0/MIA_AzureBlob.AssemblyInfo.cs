@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MIA_AzureBlob")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9e27270d322eb58a1c28f2331bcde43ac7472cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("MIA_AzureBlob")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MIA_AzureBlob")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
